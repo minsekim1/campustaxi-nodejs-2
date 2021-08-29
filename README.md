@@ -1,6 +1,6 @@
 # campustaxi-nodejs-2
 
-# (시작 가이드)[https://nodejs.org/en/docs/guides/getting-started-guide/]
+# [시작 가이드](https://nodejs.org/en/docs/guides/getting-started-guide/)
 `node app.js`로 실행.
 `http://localhost:7862` 크롬으로 들어가면 입장가능.
 
