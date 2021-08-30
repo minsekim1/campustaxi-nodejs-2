@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logs",
+  "info": {
+    "name": "log",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "default": "normal"
+    },
+    "message": {
+      "type": "text"
+    },
+    "user_ip": {
+      "type": "string"
+    },
+    "deleted_at": {
+      "type": "datetime"
+    },
+    "response_code": {
+      "type": "string"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

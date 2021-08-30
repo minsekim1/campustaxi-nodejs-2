@@ -1,0 +1,144 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users-permissions_user",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmationToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "model": "role",
+      "via": "users",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "nickname": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "profile_image": {
+      "type": "string"
+    },
+    "point": {
+      "type": "integer",
+      "default": 0
+    },
+    "greeting": {
+      "type": "text",
+      "default": "인삿말이 없습니다."
+    },
+    "device_type": {
+      "type": "string"
+    },
+    "device_token": {
+      "type": "string"
+    },
+    "access_token": {
+      "type": "string"
+    },
+    "refresh_token": {
+      "type": "string"
+    },
+    "refresh_token_expire": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "os": {
+      "type": "string"
+    },
+    "phone_verified_at": {
+      "type": "datetime"
+    },
+    "device": {
+      "type": "string"
+    },
+    "last_logined_at": {
+      "type": "datetime"
+    },
+    "last_logined_ip": {
+      "type": "string"
+    },
+    "birth": {
+      "type": "datetime"
+    },
+    "deleted_at": {
+      "type": "datetime"
+    },
+    "socket_status": {
+      "type": "string"
+    },
+    "socket_room": {
+      "type": "string"
+    },
+    "socket_id": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "W",
+        "M",
+        "None"
+      ]
+    },
+    "badge_message": {
+      "type": "integer"
+    },
+    "badge_shop": {
+      "type": "integer"
+    },
+    "badge_my": {
+      "type": "integer"
+    }
+  }
+}

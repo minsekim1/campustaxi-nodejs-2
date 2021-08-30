@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chat_rooms",
+  "info": {
+    "name": "chat_room",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "deleted_at": {
+      "type": "datetime"
+    },
+    "expect_fee": {
+      "type": "integer"
+    },
+    "course_id": {
+      "model": "post"
+    },
+    "expect_distance": {
+      "type": "float"
+    },
+    "start_route": {
+      "type": "dynamiczone",
+      "components": [
+        "route.route"
+      ]
+    },
+    "end_route": {
+      "type": "dynamiczone",
+      "components": [
+        "route.route"
+      ]
+    },
+    "expect_dtm": {
+      "type": "datetime"
+    },
+    "person_limit": {
+      "type": "integer"
+    },
+    "start_at": {
+      "type": "datetime"
+    },
+    "disable_at": {
+      "type": "datetime"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "W",
+        "M",
+        "None"
+      ]
+    },
+    "creator_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

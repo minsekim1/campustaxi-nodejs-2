@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/common-codes",
+      "handler": "common-code.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/common-codes/count",
+      "handler": "common-code.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/common-codes/:id",
+      "handler": "common-code.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/common-codes",
+      "handler": "common-code.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/common-codes/:id",
+      "handler": "common-code.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/common-codes/:id",
+      "handler": "common-code.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
