@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "common_codes",
+  "info": {
+    "name": "common_code"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "large_category": {
+      "type": "string"
+    },
+    "medium_category": {
+      "type": "string"
+    },
+    "small_category": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "deleted_at": {
+      "type": "datetime"
+    }
+  }
+}

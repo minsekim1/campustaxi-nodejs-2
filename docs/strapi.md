@@ -1,10 +1,16 @@
 # [실행법](https://strapi.io/blog/how-to-build-a-real-time-chat-forum-using-strapi-socket-io-react-and-mongo-db)
 
+# strapi 새 프로젝트 생성
+`npx create-strapi-app {프로젝트이름}`
+
 ## Start and test Strapi Server
-(nodejs 안에서 실행)
+(nodejs 안에서 실행)  
 npm run develop  
 또는  
-npm run server  
+npm run dev    
+
+## 서버 주소
+`http://localhost:1337/admin`
 
 ## 최초 실행 파일
 /config/functions/bootstrap.js

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "s",
+  "info": {
+    "name": "s"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sdasd": {
+      "type": "string"
+    }
+  }
+}

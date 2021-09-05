@@ -4,9 +4,11 @@
 *.ap_
 *.aab
 .DS_Store
+.env
 # Files for the ART/Dalvik VM
 *.dex
 
+node_modules
 # Java class files
 *.class
 

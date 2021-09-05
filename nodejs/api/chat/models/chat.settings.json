@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chats",
+  "info": {
+    "name": "chat",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chat_room_id": {
+      "model": "chat-room"
+    },
+    "message": {
+      "type": "text"
+    },
+    "deleted_at": {
+      "type": "datetime"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

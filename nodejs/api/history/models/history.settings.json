@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "histories",
+  "info": {
+    "name": "history",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "text"
+    },
+    "chat_room_id": {
+      "model": "chat-room"
+    },
+    "course_id": {
+      "model": "post"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "send_message",
+        "send_comment",
+        "mention_message",
+        "mention_comment",
+        "route_create",
+        "chatroom_create",
+        "route_delete",
+        "chatroom_delete",
+        "route_bookmark",
+        "chatroom_exit",
+        "follwing",
+        "follow",
+        "point"
+      ]
+    }
+  }
+}

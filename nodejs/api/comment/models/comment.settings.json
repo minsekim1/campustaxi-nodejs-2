@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "name": "comment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "string"
+    },
+    "course_id": {
+      "model": "post"
+    },
+    "group": {
+      "type": "integer"
+    },
+    "depth": {
+      "type": "integer"
+    },
+    "deleted_at": {
+      "type": "datetime"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

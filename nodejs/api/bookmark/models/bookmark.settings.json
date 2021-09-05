@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookmarks",
+  "info": {
+    "name": "bookmark",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course_id": {
+      "model": "post"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
