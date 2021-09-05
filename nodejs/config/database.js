@@ -1,18 +1,17 @@
-module.exports = ({ env }) => ({
-  defaultConnection: 'default',
+odule.exports = ({ env }) => ({
+  defaultConnection: "default",
   connections: {
     default: {
-      connector: 'bookshelf',
+      connector: "bookshelf",
       settings: {
-        client: 'mysql',
-        host: env('DATABASE_HOST', '127.0.0.1'),
-        port: env.int('DATABASE_PORT', 3306),
-        database: env('DATABASE_NAME', 'campustaxi'),
-        username: env('DATABASE_USERNAME', 'root'),
-        password: env('DATABASE_PASSWORD', '0000'),
-        ssl: env.bool('DATABASE_SSL', false),
+        client: "mysql",
+        host: env("DATABASE_HOST", "localhost"),
+        port: env.int("DATABASE_PORT", 3306),
+        database: env("DATABASE_NAME", "campustaxi"),
+        username: env("DATABASE_USERNAME", "root"),
+        password: env("DATABASE_PASSWORD", ""),
       },
-      options: {}
+      options: {},
     },
   },
 });
