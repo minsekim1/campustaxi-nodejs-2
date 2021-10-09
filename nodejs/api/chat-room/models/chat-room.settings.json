@@ -15,14 +15,14 @@
     "deleted_at": {
       "type": "datetime"
     },
-    "expect_fee": {
+    "taxiFare": {
       "type": "integer"
     },
     "course_id": {
       "model": "post"
     },
-    "expect_distance": {
-      "type": "float"
+    "distance": {
+      "type": "decimal"
     },
     "start_route": {
       "type": "dynamiczone",
@@ -36,7 +36,7 @@
         "route.route"
       ]
     },
-    "expect_dtm": {
+    "departureTime": {
       "type": "datetime"
     },
     "person_limit": {
@@ -59,6 +59,15 @@
     "creator_id": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "title": {
+      "type": "string"
+    },
+    "path": {
+      "type": "json"
+    },
+    "duration": {
+      "type": "decimal"
     }
   }
 }

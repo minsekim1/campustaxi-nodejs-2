@@ -31,9 +31,6 @@
     "naver_id": {
       "type": "string"
     },
-    "distance": {
-      "type": "string"
-    },
     "category_name": {
       "type": "string"
     },
