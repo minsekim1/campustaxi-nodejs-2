@@ -15,8 +15,15 @@
     "description": {
       "type": "text"
     },
-    "image": {
-      "model": "file",
+    "deleted_at": {
+      "type": "datetime"
+    },
+    "creator_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "images": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -27,12 +34,11 @@
       "required": false,
       "pluginOptions": {}
     },
-    "deleted_at": {
-      "type": "datetime"
+    "title": {
+      "type": "string"
     },
-    "creator_id": {
-      "plugin": "users-permissions",
-      "model": "user"
+    "content": {
+      "type": "json"
     }
   }
 }
