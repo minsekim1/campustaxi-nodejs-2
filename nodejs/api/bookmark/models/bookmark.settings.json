@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "course_id": {
-      "model": "post"
-    },
     "user_id": {
       "plugin": "users-permissions",
       "model": "user"

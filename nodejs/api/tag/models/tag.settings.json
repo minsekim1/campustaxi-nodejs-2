@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "tags",
   "info": {
-    "name": "tag"
+    "name": "tag",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,11 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "common_code_id": {
-      "model": "common-code"
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "maxLength": 40
     },
-    "course_id": {
-      "model": "post"
+    "courses": {
+      "via": "tags",
+      "collection": "course"
     }
   }
 }

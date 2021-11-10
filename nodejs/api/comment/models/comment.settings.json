@@ -15,9 +15,6 @@
     "comment": {
       "type": "string"
     },
-    "course_id": {
-      "model": "post"
-    },
     "group": {
       "type": "integer"
     },

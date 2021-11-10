@@ -18,9 +18,6 @@
     "taxiFare": {
       "type": "integer"
     },
-    "course_id": {
-      "model": "post"
-    },
     "distance": {
       "type": "decimal"
     },

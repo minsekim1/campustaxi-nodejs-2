@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "courses",
   "info": {
     "name": "course",
     "description": ""
@@ -12,8 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
     "description": {
-      "type": "text"
+      "type": "string"
     },
     "deleted_at": {
       "type": "datetime"
@@ -34,11 +37,13 @@
       "required": false,
       "pluginOptions": {}
     },
-    "title": {
-      "type": "string"
-    },
     "content": {
-      "type": "json"
+      "type": "text"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "courses",
+      "dominant": true
     }
   }
 }

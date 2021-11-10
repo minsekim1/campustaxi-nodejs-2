@@ -18,9 +18,6 @@
     "chat_room_id": {
       "model": "chat-room"
     },
-    "course_id": {
-      "model": "post"
-    },
     "user_id": {
       "plugin": "users-permissions",
       "model": "user"
