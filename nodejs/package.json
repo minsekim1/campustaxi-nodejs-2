@@ -10,7 +10,6 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "knex": "0.21.18",
     "mysql": "2.18.1",
@@ -24,6 +23,7 @@
     "strapi-plugin-i18n": "3.6.8",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
+    "strapi-provider-upload-sftp-v2": "^1.0.2",
     "strapi-utils": "3.6.8"
   },
   "author": {
