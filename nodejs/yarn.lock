@@ -9255,6 +9255,14 @@ strapi-database@3.6.8:
     strapi-utils "3.6.8"
     verror "^1.10.0"
 
+strapi-deepsearch-service@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/strapi-deepsearch-service/-/strapi-deepsearch-service-0.5.0.tgz#b37f195547cce2110d71d527db1864feaad64d04"
+  integrity sha512-931CPBuAeU+QtpKT6ERanTGWrM5bsXQLZl94cJ1JIhqtEzR4GlQaWR8sXnVv6q1WSGg/ZjmgEh6+swaSoFX5Ag==
+  dependencies:
+    lodash "^4.17.12"
+    strapi-utils "^3.0.6"
+
 strapi-generate-api@3.6.8:
   version "3.6.8"
   resolved "https://registry.npmjs.org/strapi-generate-api/-/strapi-generate-api-3.6.8.tgz"
@@ -9412,6 +9420,13 @@ strapi-plugin-content-manager@3.6.8:
     strapi-utils "3.6.8"
     yup "^0.32.9"
 
+strapi-plugin-content-search@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-content-search/-/strapi-plugin-content-search-0.6.0.tgz#4f01933156630c515cc06f682df582b0c821b3db"
+  integrity sha512-Traj6Z8xUPFXeIKHykEhE0A/cQJUtq1ncl7AHl0L/UenHmOMLxX7mb+dWmQFee43D+EzBNOJDPRYwvw9UlQlRw==
+  dependencies:
+    strapi-deepsearch-service "0.5.0"
+
 strapi-plugin-content-type-builder@3.6.8:
   version "3.6.8"
   resolved "https://registry.npmjs.org/strapi-plugin-content-type-builder/-/strapi-plugin-content-type-builder-3.6.8.tgz"
@@ -9550,7 +9565,7 @@ strapi-provider-upload-local@3.6.8:
   resolved "https://registry.npmjs.org/strapi-provider-upload-local/-/strapi-provider-upload-local-3.6.8.tgz"
   integrity sha512-GkedrjO+T4DN649Ak0SMSS5Vdta0AoZRt9+IWLO9TGLZ7hjtIjnB60kGf0fQKspIhbS7DUqtwuzQAXTd8fXJOg==
 
-strapi-utils@3.6.8:
+strapi-utils@3.6.8, strapi-utils@^3.0.6:
   version "3.6.8"
   resolved "https://registry.npmjs.org/strapi-utils/-/strapi-utils-3.6.8.tgz"
   integrity sha512-6tKHfkjrY3AfSv8sAg77Ix7meMttyd2efODY2dOKkKgdXDugdNwbl/AavjWL0xfywZaCNhxkNLLN/2Wvx8pO+w==

@@ -8,7 +8,8 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": true,
+    "searchable": true
   },
   "pluginOptions": {},
   "attributes": {
@@ -23,12 +24,14 @@
     },
     "start_route": {
       "type": "dynamiczone",
+      "searchable": true,
       "components": [
         "route.route"
       ]
     },
     "end_route": {
       "type": "dynamiczone",
+      "searchable": true,
       "components": [
         "route.route"
       ]
@@ -58,7 +61,8 @@
       "model": "user"
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "searchable": true
     },
     "path": {
       "type": "json"
