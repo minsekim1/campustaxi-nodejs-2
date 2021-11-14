@@ -8,7 +8,7 @@
   "options": {
     "draftAndPublish": false,
     "timestamps": true,
-    "searchable": true,
+    "searchable": true
   },
   "attributes": {
     "username": {
