@@ -9255,7 +9255,7 @@ strapi-database@3.6.8:
     strapi-utils "3.6.8"
     verror "^1.10.0"
 
-strapi-deepsearch-service@0.5.0:
+strapi-deepsearch-service@0.5.0, strapi-deepsearch-service@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/strapi-deepsearch-service/-/strapi-deepsearch-service-0.5.0.tgz#b37f195547cce2110d71d527db1864feaad64d04"
   integrity sha512-931CPBuAeU+QtpKT6ERanTGWrM5bsXQLZl94cJ1JIhqtEzR4GlQaWR8sXnVv6q1WSGg/ZjmgEh6+swaSoFX5Ag==

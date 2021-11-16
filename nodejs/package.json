@@ -20,6 +20,7 @@
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",
     "strapi-connector-bookshelf": "3.6.8",
+    "strapi-deepsearch-service": "^0.5.0",
     "strapi-plugin-content-manager": "3.6.8",
     "strapi-plugin-content-search": "^0.6.0",
     "strapi-plugin-content-type-builder": "3.6.8",
