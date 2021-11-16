@@ -22,20 +22,6 @@
     "distance": {
       "type": "decimal"
     },
-    "start_route": {
-      "type": "dynamiczone",
-      "searchable": true,
-      "components": [
-        "route.route"
-      ]
-    },
-    "end_route": {
-      "type": "dynamiczone",
-      "searchable": true,
-      "components": [
-        "route.route"
-      ]
-    },
     "departureTime": {
       "type": "datetime"
     },
@@ -69,6 +55,16 @@
     },
     "duration": {
       "type": "decimal"
+    },
+    "start_route": {
+      "type": "component",
+      "repeatable": false,
+      "component": "route.route"
+    },
+    "end_route": {
+      "type": "component",
+      "repeatable": false,
+      "component": "route.route"
     }
   }
 }
