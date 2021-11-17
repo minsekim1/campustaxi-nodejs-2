@@ -46,6 +46,14 @@
       "collection": "tag",
       "via": "courses",
       "dominant": true
+    },
+    "start_route": {
+      "model": "route",
+      "via": "courses"
+    },
+    "end_route": {
+      "model": "route",
+      "via": "courses"
     }
   }
 }

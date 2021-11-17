@@ -55,16 +55,6 @@
     },
     "duration": {
       "type": "decimal"
-    },
-    "start_route": {
-      "type": "component",
-      "repeatable": false,
-      "component": "route.route"
-    },
-    "end_route": {
-      "type": "component",
-      "repeatable": false,
-      "component": "route.route"
     }
   }
 }

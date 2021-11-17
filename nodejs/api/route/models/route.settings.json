@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "routes",
+  "info": {
+    "name": "Route"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "x": {
+      "type": "float"
+    },
+    "y": {
+      "type": "float"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "address_code": {
+      "type": "integer"
+    },
+    "category_name": {
+      "type": "string"
+    },
+    "road_address_name": {
+      "type": "string"
+    },
+    "place_url": {
+      "type": "string"
+    },
+    "category_group_name": {
+      "type": "string"
+    },
+    "category_group_code": {
+      "type": "string"
+    },
+    "address_name": {
+      "type": "string"
+    },
+    "naver_id": {
+      "type": "string"
+    },
+    "place_name": {
+      "type": "string"
+    },
+    "courses": {
+      "via": "end_route",
+      "collection": "course"
+    }
+  }
+}
