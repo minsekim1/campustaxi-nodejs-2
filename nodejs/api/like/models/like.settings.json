@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "follows",
+  "collectionName": "likes",
   "info": {
-    "name": "follow",
-    "description": ""
+    "name": "Like"
   },
   "options": {
     "increments": true,
@@ -12,13 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "from_user_id": {
+    "user_id": {
       "plugin": "users-permissions",
       "model": "user"
     },
-    "to_user_id": {
-      "plugin": "users-permissions",
-      "model": "user"
+    "courses": {
+      "via": "likes",
+      "collection": "course"
     }
   }
 }

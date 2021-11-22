@@ -55,6 +55,14 @@
     },
     "duration": {
       "type": "decimal"
+    },
+    "start_route": {
+      "model": "route",
+      "via": "start_chat_rooms"
+    },
+    "end_route": {
+      "model": "route",
+      "via": "end_chat_rooms"
     }
   }
 }

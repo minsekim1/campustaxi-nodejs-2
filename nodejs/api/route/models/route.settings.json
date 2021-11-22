@@ -47,9 +47,21 @@
     "place_name": {
       "type": "string"
     },
-    "courses": {
+    "start_courses": {
+      "via": "start_route",
+      "collection": "course"
+    },
+    "end_courses": {
       "via": "end_route",
       "collection": "course"
+    },
+    "end_chat_rooms": {
+      "via": "end_route",
+      "collection": "chat-room"
+    },
+    "start_chat_rooms": {
+      "via": "start_route",
+      "collection": "chat-room"
     }
   }
 }

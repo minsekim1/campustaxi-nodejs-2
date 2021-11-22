@@ -49,11 +49,16 @@
     },
     "start_route": {
       "model": "route",
-      "via": "courses"
+      "via": "start_courses"
     },
     "end_route": {
       "model": "route",
-      "via": "courses"
+      "via": "end_courses"
+    },
+    "likes": {
+      "collection": "like",
+      "via": "courses",
+      "dominant": true
     }
   }
 }
