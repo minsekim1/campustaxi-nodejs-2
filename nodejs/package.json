@@ -11,7 +11,8 @@
     "build": "strapi build",
     "strapi": "strapi",
     "monitor": "pm2 monit",
-    "test": "node server.js"
+    "test": "node server.js",
+    "upload": "git add . && git commit -m \"upload\" && git push"
   },
   "dependencies": {
     "knex": "0.21.18",
