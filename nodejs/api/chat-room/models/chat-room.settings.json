@@ -8,35 +8,21 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": true,
+    "searchable": true
   },
   "pluginOptions": {},
   "attributes": {
     "deleted_at": {
       "type": "datetime"
     },
-    "expect_fee": {
+    "taxiFare": {
       "type": "integer"
     },
-    "course_id": {
-      "model": "post"
+    "distance": {
+      "type": "decimal"
     },
-    "expect_distance": {
-      "type": "float"
-    },
-    "start_route": {
-      "type": "dynamiczone",
-      "components": [
-        "route.route"
-      ]
-    },
-    "end_route": {
-      "type": "dynamiczone",
-      "components": [
-        "route.route"
-      ]
-    },
-    "expect_dtm": {
+    "departureTime": {
       "type": "datetime"
     },
     "person_limit": {
@@ -59,6 +45,24 @@
     "creator_id": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "title": {
+      "type": "string",
+      "searchable": true
+    },
+    "path": {
+      "type": "json"
+    },
+    "duration": {
+      "type": "decimal"
+    },
+    "start_route": {
+      "model": "route",
+      "via": "start_chat_rooms"
+    },
+    "end_route": {
+      "model": "route",
+      "via": "end_chat_rooms"
     }
   }
 }

@@ -7,7 +7,8 @@
   },
   "options": {
     "draftAndPublish": false,
-    "timestamps": true
+    "timestamps": true,
+    "searchable": true
   },
   "attributes": {
     "username": {
@@ -62,7 +63,8 @@
     "nickname": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "searchable": true
     },
     "profile_image": {
       "type": "string"
@@ -75,41 +77,11 @@
       "type": "text",
       "default": "인삿말이 없습니다."
     },
-    "device_type": {
-      "type": "string"
-    },
-    "device_token": {
-      "type": "string"
-    },
-    "access_token": {
-      "type": "string"
-    },
-    "refresh_token": {
-      "type": "string"
-    },
-    "refresh_token_expire": {
-      "type": "string"
-    },
-    "phone": {
-      "type": "string"
-    },
     "os": {
       "type": "string"
     },
-    "phone_verified_at": {
-      "type": "datetime"
-    },
-    "device": {
-      "type": "string"
-    },
-    "last_logined_at": {
-      "type": "datetime"
-    },
     "last_logined_ip": {
       "type": "string"
-    },
-    "birth": {
-      "type": "datetime"
     },
     "deleted_at": {
       "type": "datetime"
@@ -139,6 +111,66 @@
     },
     "badge_my": {
       "type": "integer"
+    },
+    "followings": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "followers",
+      "dominant": true
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "users"
+    },
+    "kakao_id": {
+      "type": "string"
+    },
+    "kakao_nickname": {
+      "type": "string"
+    },
+    "kakao_profile_image": {
+      "type": "string"
+    },
+    "kakao_profile_thumbnail": {
+      "type": "string"
+    },
+    "kakao_email": {
+      "type": "string"
+    },
+    "kakao_age_range": {
+      "type": "string"
+    },
+    "kakao_birthday": {
+      "type": "string"
+    },
+    "kakao_birthday_type": {
+      "type": "string"
+    },
+    "kakao_gender": {
+      "type": "string"
+    },
+    "kakao_access_token": {
+      "type": "string"
+    },
+    "kakao_token_type": {
+      "type": "string"
+    },
+    "kakao_refresh_token": {
+      "type": "string"
+    },
+    "kakao_expires_in": {
+      "type": "string"
+    },
+    "kakao_refresh_token_expires_in": {
+      "type": "string"
+    },
+    "browser": {
+      "type": "string"
+    },
+    "like_courses": {
+      "via": "like_users",
+      "collection": "course"
     }
   }
 }

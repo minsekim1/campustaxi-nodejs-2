@@ -1,18 +1,17 @@
 module.exports = ({ env }) => ({
-  defaultConnection: 'default',
+  defaultConnection: "default",
   connections: {
     default: {
-      connector: 'bookshelf',
+      connector: "bookshelf",
       settings: {
-        client: 'mysql',
-        host: env('DATABASE_HOST', '127.0.0.1'),
-        port: env.int('DATABASE_PORT', 3306),
-        database: env('DATABASE_NAME', 'campustaxi'),
-        username: env('DATABASE_USERNAME', 'root'),
-        password: env('DATABASE_PASSWORD', '0000'),
-        ssl: env.bool('DATABASE_SSL', false),
+        client: "mysql",
+        host: env("DATABASE_HOST", "3.35.144.255"),
+        port: env.int("DATABASE_PORT", 3306),
+        database: env("DATABASE_NAME", "campustaxi_2021_2"),
+        username: env("DATABASE_USERNAME", "root"),
+        password: env("DATABASE_PASSWORD", "m~WJ<iQs5DiSF*j#5yw/kA"),
       },
-      options: {}
+      options: {},
     },
   },
 });

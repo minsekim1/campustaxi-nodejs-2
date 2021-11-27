@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "course",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "searchable": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "searchable": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "deleted_at": {
+      "type": "datetime"
+    },
+    "creator_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "content": {
+      "type": "text"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "courses",
+      "dominant": true
+    },
+    "start_route": {
+      "model": "route",
+      "via": "start_courses"
+    },
+    "end_route": {
+      "model": "route",
+      "via": "end_courses"
+    },
+    "views": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "like_users": {
+      "via": "like_courses",
+      "plugin": "users-permissions",
+      "collection": "user",
+      "dominant": true
+    }
+  }
+}
