@@ -9,7 +9,6 @@
     "Dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "restore": "strapi configuration:restore",
     "strapi": "strapi",
     "monitor": "pm2 monit",
     "test": "node server.js",

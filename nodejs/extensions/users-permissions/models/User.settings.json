@@ -112,12 +112,7 @@
     "badge_my": {
       "type": "integer"
     },
-    "followings": {
-      "plugin": "users-permissions",
-      "collection": "user",
-      "via": "followers",
-      "dominant": true
-    },
+
     "users_permissions_users": {
       "plugin": "users-permissions",
       "collection": "user",
