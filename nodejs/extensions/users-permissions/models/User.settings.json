@@ -112,15 +112,16 @@
     "badge_my": {
       "type": "integer"
     },
-    "following": {
+    "followings": {
       "plugin": "users-permissions",
       "collection": "user",
-      "via": "follower"
+      "via": "followers",
+      "dominant": true
     },
-    "follower": {
+    "users_permissions_users": {
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "following"
+      "collection": "user",
+      "via": "users"
     },
     "kakao_id": {
       "type": "string"
@@ -166,6 +167,10 @@
     },
     "browser": {
       "type": "string"
+    },
+    "like_courses": {
+      "via": "like_users",
+      "collection": "course"
     }
   }
 }

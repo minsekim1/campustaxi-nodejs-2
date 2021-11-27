@@ -55,9 +55,14 @@
       "model": "route",
       "via": "end_courses"
     },
-    "likes": {
-      "collection": "like",
-      "via": "courses",
+    "views": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "like_users": {
+      "via": "like_courses",
+      "plugin": "users-permissions",
+      "collection": "user",
       "dominant": true
     }
   }
