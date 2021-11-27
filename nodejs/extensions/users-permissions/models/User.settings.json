@@ -113,11 +113,7 @@
       "type": "integer"
     },
 
-    "users_permissions_users": {
-      "plugin": "users-permissions",
-      "collection": "user",
-      "via": "users"
-    },
+
     "kakao_id": {
       "type": "string"
     },
