@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_route_routes",
+  "info": {
+    "name": "position",
+    "icon": "map-marker-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "address_detail": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lon": {
+      "type": "float"
+    },
+    "address_code": {
+      "type": "integer"
+    }
+  }
+}
