@@ -1,4 +1,4 @@
-export const ProxyURL = "https://circlin-web-react-proxy.herokuapp.com/";
+const ProxyURL = "https://circlin-web-react-proxy.herokuapp.com/";
 module.exports = ({ env }) => ({
   upload: {
     provider: "ftp-v2",
