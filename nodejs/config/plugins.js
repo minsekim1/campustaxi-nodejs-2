@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
       password: "tkarnr78^@",
       basePath: "/ftp/",
       baseUrl:
-        "https://circlin-web-react-proxy.herokuapp.com/http://218.153.157.69/ftp/",
+        "http://218.153.157.69/ftp/",
     },
   },
 });
