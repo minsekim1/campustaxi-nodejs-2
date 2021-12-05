@@ -29,7 +29,8 @@
       "type": "integer"
     },
     "start_at": {
-      "type": "datetime"
+      "type": "datetime",
+      "searchable": true
     },
     "disable_at": {
       "type": "datetime"
@@ -43,27 +44,30 @@
       "model": "user"
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "searchable": true
     },
     "path": {
       "type": "json"
     },
     "duration": {
-      "type": "decimal"
+      "type": "decimal",
+      "searchable": true
     },
     "start_route": {
       "via": "start_chat_rooms",
-      "model": "route"
+      "model": "route",
+      "searchable": true
     },
     "end_route": {
       "via": "end_chat_rooms",
-      "model": "route"
+      "model": "route",
+      "searchable": true
     },
     "enter_users": {
       "via": "enter_chat_rooms",
       "plugin": "users-permissions",
-      "collection": "user",
-      "searchable": true
+      "collection": "user"
     }
   }
 }
