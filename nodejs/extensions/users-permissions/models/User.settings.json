@@ -112,8 +112,6 @@
     "badge_my": {
       "type": "integer"
     },
-
-
     "kakao_id": {
       "type": "string"
     },
@@ -162,6 +160,22 @@
     "like_courses": {
       "via": "like_users",
       "collection": "course"
+    },
+    "followers": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "followings",
+      "dominant": true
+    },
+    "followings": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "followers"
+    },
+    "enter_chat_rooms": {
+      "via": "enter_users",
+      "collection": "chat-room",
+      "dominant": true
     }
   }
 }

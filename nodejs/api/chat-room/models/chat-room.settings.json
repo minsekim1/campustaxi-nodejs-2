@@ -57,12 +57,17 @@
       "type": "decimal"
     },
     "start_route": {
-      "model": "route",
-      "via": "start_chat_rooms"
+      "via": "start_chat_rooms",
+      "model": "route"
     },
     "end_route": {
-      "model": "route",
-      "via": "end_chat_rooms"
+      "via": "end_chat_rooms",
+      "model": "route"
+    },
+    "enter_users": {
+      "via": "enter_chat_rooms",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

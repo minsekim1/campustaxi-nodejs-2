@@ -48,12 +48,12 @@
       "dominant": true
     },
     "start_route": {
-      "model": "route",
-      "via": "start_courses"
+      "via": "start_courses",
+      "model": "route"
     },
     "end_route": {
-      "model": "route",
-      "via": "end_courses"
+      "via": "end_courses",
+      "model": "route"
     },
     "views": {
       "type": "biginteger",
