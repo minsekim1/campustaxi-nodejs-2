@@ -36,19 +36,14 @@
     },
     "gender": {
       "type": "enumeration",
-      "enum": [
-        "W",
-        "M",
-        "None"
-      ]
+      "enum": ["W", "M", "None"]
     },
     "creator_id": {
       "plugin": "users-permissions",
       "model": "user"
     },
     "title": {
-      "type": "string",
-      "searchable": true
+      "type": "string"
     },
     "path": {
       "type": "json"
@@ -67,7 +62,8 @@
     "enter_users": {
       "via": "enter_chat_rooms",
       "plugin": "users-permissions",
-      "collection": "user"
+      "collection": "user",
+      "searchable": true
     }
   }
 }
